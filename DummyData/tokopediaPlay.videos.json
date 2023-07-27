@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "64c270428a7ecfe0e25b3340"
+  },
+  "urlImage": "http//image.com",
+  "thumbnail": "http//thumbnail.com",
+  "title": "beli sekarang!!!",
+  "category": "fashion"
+},
+{
+  "_id": {
+    "$oid": "64c27acf8a7ecfe0e25b334b"
+  },
+  "urlImage": "http//image.com",
+  "thumbnail": "http//thumbnail.com",
+  "title": "checkout sekarang!!!",
+  "category": "beauty"
+}]
