@@ -12,10 +12,11 @@ This collection contains data about videos. The schema is as follows:
 
 ```
 {
-     "videoID": "string,
-     "urlImage": "string,
-     "thumbnail": "string,
-     "title": "string
+     "videoID": "string",
+     "urlImage": "string",
+     "thumbnail": "string",
+     "title": "string",
+     "category": "String"
  }
 ```
 
@@ -25,10 +26,10 @@ This collection contains data about Products. The schema is as follows:
 
 ```
 {
-     "videoID": "string,
-     "linkProduct": "string,
-     "title": "string,
-     "price": "string
+     "videoID": "string",
+     "linkProduct": "string",
+     "title": "string",
+     "price": "string"
  }
 ```
 
@@ -102,13 +103,15 @@ This API will return a list of videos.
       "videoID": "string",
       "urlImage": "string",
       "thumbnail": "string",
-      "title": "string"
+      "title": "string",
+      "category": "String"
     },
     {
       "videoID": "string",
       "urlImage": "string",
       "thumbnail": "string",
-      "title": "string"
+      "title": "string",
+      "category": "String"
     }
   ]
   ```
