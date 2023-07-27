@@ -136,7 +136,8 @@ This API will return a video with the specified id.
     "videoID": "string",
     "urlImage": "string",
     "thumbnail": "string",
-    "title": "string"
+    "title": "string",
+    "category": "String"
   }
   ```
 
