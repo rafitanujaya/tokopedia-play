@@ -12,7 +12,7 @@ This collection contains data about videos. The schema is as follows:
 
 ```
 {
-     "videoID": "string",
+     "_id": objectId("string"),
      "urlImage": "string",
      "thumbnail": "string",
      "title": "string",
@@ -26,6 +26,7 @@ This collection contains data about Products. The schema is as follows:
 
 ```
 {
+     "_id": objectId("string"),
      "videoID": "string",
      "linkProduct": "string",
      "title": "string",
@@ -39,6 +40,7 @@ This collection contains data about Comments. The schema is as follows:
 
 ```
 {
+     "_id": objectId("string"),
      "videoID": "string",
      "username": "string",
      "comment": "string",
