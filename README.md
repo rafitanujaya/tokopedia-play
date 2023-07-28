@@ -76,11 +76,11 @@ The utilities layer contains auxiliary functions that can be used in various par
 ## List APIs
 
 - `GET` http://localhost:3000/api/videos
-- `GET` http://localhost:3000/api/videos/:videoID
+- `GET` http://localhost:3000/api/video/:videoID
 - `GET` http://localhost:3000/api/video?category=fashion
-- `GET` http://localhost:3000/api/videos/:videoID/comments
-- `GET` http://localhost:3000/api/videos/:videoID/products
-- `POST` http://localhost:3000/api/videos/:videoID/addcomment
+- `GET` http://localhost:3000/api/:videoID/comments
+- `GET` http://localhost:3000/api/:videoID/products
+- `POST` http://localhost:3000/api/:videoID/addcomment
 
 ### GET api/videos
 
@@ -116,7 +116,7 @@ This API will return a list of videos.
   ]
   ```
 
-  ### GET api/videos/:videoID
+  ### GET api/video/:videoID
 
 This API will return a video with the specified id.
 
@@ -152,7 +152,7 @@ This API will return a video with the specified id.
   }
   ```
 
-  ### GET api/video?categories=
+  ### GET api/videos?categories=
 
 This API will return a video with the specified id.
 
@@ -179,7 +179,7 @@ This API will return a video with the specified id.
   }
   ```
 
-  ### GET api/videos/:videoID/comments
+  ### GET api/:videoID/comments
 
 This API will return a list of comments that are related to the video with the specified id.
 
@@ -211,9 +211,9 @@ This API will return a list of comments that are related to the video with the s
   ]
   ```
 
-  ### GET api/videos/:videoID/products
+  ### GET api/:videoID/products
 
-This API will return a list of comments that are related to the video with the specified id.
+This API will return a list of product that are related to the video with the specified id.
 
 - URL Params:
   - required: `videoID=[string]`
@@ -245,9 +245,9 @@ This API will return a list of comments that are related to the video with the s
   ]
   ```
 
-  ### POST api/videos/:videoID/comments
+  ### POST api/:videoID/addcomment
 
-This API will return a list of comments that are related to the video with the specified id.
+This API will create a comment associated with the video with the specified id.
 
 - URL Params:
   - required: `videoID=[string]`

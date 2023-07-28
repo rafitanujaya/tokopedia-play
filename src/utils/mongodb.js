@@ -8,7 +8,7 @@ async function connectDatabase() {
     console.log('Database Connected');
   } catch (error) {
     console.error('Error connecting to the database:', error.message);
-    process.exit(1); // Exit the application if unable to connect to the database
+    process.exit(1);
   }
 }
 

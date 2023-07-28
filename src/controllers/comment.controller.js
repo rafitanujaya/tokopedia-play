@@ -1,4 +1,4 @@
-const { getCommentByIdVideo, addCommentByIdVideo, savedComment } = require('../services/comment.service')
+const { getcommentByVideoID, addCommentByVideoID, saveComment } = require('../services/comment.service')
 
 async function getComments(req, res) {
     const { videoID } = req.params;
@@ -10,7 +10,7 @@ async function getComments(req, res) {
         });
     }
     try {
-        const comments = await getCommentByIdVideo(videoID);
+        const comments = await getcommentByVideoID(videoID);
         if (comments.length === 0) {
             return res.json({
                 comments: [],
@@ -37,8 +37,8 @@ async function addComment(req, res) {
         });
     }
     try {
-        const addComment = await addCommentByIdVideo(videoID, commentData);
-        await savedComment(addComment);
+        const addComment = await addCommentByVideoID(videoID, commentData);
+        await saveComment(addComment);
         return res.status(201).json({
             message: "Comment berhasil di tambahkan"
         });

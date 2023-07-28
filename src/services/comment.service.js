@@ -2,26 +2,23 @@
 const Comment = require('../model/Comment');
 
 
-const getCommentByIdVideo = (videoID) => {
+const getcommentByVideoID = (videoID) => {
     return Comment.find({ videoID });
 }
 
-// addCommentByVideoID
-const addCommentByIdVideo = (videoID, commentData) => {
+const addCommentByVideoID = (videoID, commentData) => {
     return new Comment({
         videoID,
         ...commentData
     })
 }
 
-// Karena ini function, pakai verb yaa
-// saveComment
-const savedComment = (comment) => {
+const saveComment = (comment) => {
     return comment.save()
 }
 
 module.exports = {
-    getCommentByIdVideo,
-    addCommentByIdVideo,
-    savedComment
+    getcommentByVideoID,
+    addCommentByVideoID,
+    saveComment
 }

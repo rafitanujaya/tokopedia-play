@@ -2,7 +2,6 @@ const { getProductByVideoID, productList } = require('../services/product.servic
 
 async function getProduct(req, res) {
     const { videoID } = req.params;
-    console.log(req.params)
     if (!videoID) {
         return res.status(400).json({
             status: 400,
@@ -11,9 +10,7 @@ async function getProduct(req, res) {
     }
     try {
         const products = await getProductByVideoID(videoID);
-        console.log(products)
         const productLists = productList(products);
-        console.log(productLists)
         if (productLists.length === 0) {
             return res.json({
                 productLists: [],

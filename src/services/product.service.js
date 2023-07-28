@@ -1,6 +1,5 @@
 const Product = require('../model/Product');
 
-// Typo: getProductByVideoID
 const getProductByVideoID = (videoID) => {
     return Product.find({ videoID })
 }
