@@ -42,7 +42,7 @@ docker run -dp 5001:3000 --name tokopediaplay  tokopediaplay
 2. Pull docker hub:
 
 ```sh
-docker pull rafitanujaya/tokopediaplay:1.0
+docker pull rafitanujaya/tokopediaplay:2.0
 ```
 
 3. Run docker:
